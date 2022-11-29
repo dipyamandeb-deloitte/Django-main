@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> SEND MAIL </title>
+
+</head>
+
+<body>
+
+    <form method="post">
+
+       {% csrf_token %}
+
+        <h1>  MAIL SENDER </h1>
+
+        subject<br>
+
+        <input type="text" name="subject"><br>
+
+        message<br>
+
+        <textarea name="message" cols="30" rows="10"></textarea><br>
+
+        email<br>
+
+        <input type="email" name="email"><br>
+
+        <button type="submit">SEND</button>
+
+
+
+
+
+    </form>
+
+</body>
+
+</html>
